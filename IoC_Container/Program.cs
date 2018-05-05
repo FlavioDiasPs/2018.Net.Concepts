@@ -22,9 +22,11 @@ namespace IoC_Container
             {
                 var brand = scope.ResolveNamed<IBrand>("Brand");
                 var CarBrand = scope.ResolveNamed<IBrand>("CarBrand");
+                //var NewCarBrand = scope.Resolve<ICarBrand, >
 
                 Console.WriteLine(CarBrand.GetBrandNameById(id));
                 Console.WriteLine(brand.GetBrandNameById(id));
+                //Console.WriteLine(NewCarBrand.IsCarBrand(id));
             }
         }
     }
