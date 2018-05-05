@@ -10,6 +10,7 @@ namespace IoC_InversionOfControl
             ConstInjection_Service constInjection_Service = new ConstInjection_Service();
             for (int i = 0; i < 10; i++) Console.WriteLine(constInjection_Service.GetAnyJobName());
 
+
             Console.WriteLine();
             Console.WriteLine("Property Injection...");
             PropInjection_Service propInjection_Service = new PropInjection_Service();
