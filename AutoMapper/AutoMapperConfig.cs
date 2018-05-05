@@ -2,20 +2,19 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using 
 
-
-
-namespace AutoMapper
+namespace UsingAutoMapper
 {
     public class AutoMapperConfig
     {
-        //public AutomapperWebProfile()
-        //{
+        public AutoMapperConfig()
+        {
 
-        //    //CreateMap<EmployeeDomainModel, EmployeeViewModel>();
+            createmap<employeedomainmodel, employeeviewmodel>();
 
-        //    //CreateMap<EmployeeViewModel, EmployeeDomainModel>();
+            createmap<employeeviewmodel, employeedomainmodel>();
 
-        //}
+        }
     }
 }

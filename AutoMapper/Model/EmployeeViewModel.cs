@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AutoMapper.Model
+namespace UsingAutoMapper.Model
 {
     public class EmployeeViewModel
     {

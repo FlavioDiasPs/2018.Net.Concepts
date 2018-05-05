@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AutoMapper
+namespace UsingAutoMapper
 {
     class Program
     {
