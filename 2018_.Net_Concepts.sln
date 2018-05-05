@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC_InversionOfControl", "I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC_Container", "IoC_Container\IoC_Container.csproj", "{475B3C25-826A-4A8C-B1D7-4244B12BCEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper", "AutoMapper\AutoMapper.csproj", "{F7E44258-ADC8-4EC3-BC08-E95514D330BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingAutoMapper", "AutoMapper\UsingAutoMapper.csproj", "{F7E44258-ADC8-4EC3-BC08-E95514D330BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
