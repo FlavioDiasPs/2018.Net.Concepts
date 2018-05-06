@@ -31,15 +31,32 @@ namespace UsingGenerics
 
 
             var item1 = new GenericItem<string, Person>();
-            var item2 = new List<GenericItem<object, object>>();
-            var item3 = new GenericItem<Guid, Person>(guidList.ToArray(), personList.ToArray());
-
             item1.Add("item 1 item", new Person() { Name = "item 1 name", Age = 0 });
+            Console.WriteLine(item1["item 1 item"].Name.ToString());
+
+
+
+
+            var item2 = new List<GenericItem<object, object>>();            
+            var a = new GenericItem<object, object>();
+
+            a.AddRange(
+                    new List<Object>() { "jaca", 1, 2.3 }.ToArray(),
+                    new List<Object>() { "senta krl", 2.4, 3 }.ToArray()
+                    );
 
             item2.Add(new GenericItem<object, object>(12, new Person() { Name = "item 2 name", Age = 12 }));
             item2.Add(new GenericItem<object, object>(12, "abc"));
-            item2.Add(new GenericItem<object, object>("jaca", "senta krl"));
+            item2.Add(a);
+            Console.WriteLine(item2[2]["jaca"].ToString());
+            Console.WriteLine(item2[2][1].ToString());
 
+
+
+
+
+
+            var item3 = new GenericItem<Guid, Person>(guidList.ToArray(), personList.ToArray());
             item3.AddRange
                 (
                     new List<Guid>()
@@ -54,6 +71,7 @@ namespace UsingGenerics
                     }.ToArray()
                 );
 
+            
 
             Console.WriteLine("Hello World!");
         }
