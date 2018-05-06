@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+    <RuntimeIdentifier>win10-x64;ubuntu.16.10-x64;android.21</RuntimeIdentifier>
+  </PropertyGroup>
+</Project>
+
+
+
