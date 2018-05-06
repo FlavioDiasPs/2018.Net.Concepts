@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC_Container", "IoC_Contai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingAutoMapper", "AutoMapper\UsingAutoMapper.csproj", "{F7E44258-ADC8-4EC3-BC08-E95514D330BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingGenerics", "UsingGenerics\UsingGenerics.csproj", "{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingGenerics", "UsingGenerics\UsingGenerics.csproj", "{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplatform_NetCoreApp", "Multiplatform_NetCoreApp\Multiplatform_NetCoreApp.csproj", "{6B147ECD-BB7F-4A7A-AC54-D42D3A6D5049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multiplatform_NetCoreApp", "Multiplatform_NetCoreApp\Multiplatform_NetCoreApp.csproj", "{6B147ECD-BB7F-4A7A-AC54-D42D3A6D5049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSignalR_Chatting", "UsingSignalR_Chatting\UsingSignalR_Chatting.csproj", "{60F52B6A-564A-45E6-B8AB-A79AB8B60486}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6B147ECD-BB7F-4A7A-AC54-D42D3A6D5049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B147ECD-BB7F-4A7A-AC54-D42D3A6D5049}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B147ECD-BB7F-4A7A-AC54-D42D3A6D5049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F52B6A-564A-45E6-B8AB-A79AB8B60486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F52B6A-564A-45E6-B8AB-A79AB8B60486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F52B6A-564A-45E6-B8AB-A79AB8B60486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F52B6A-564A-45E6-B8AB-A79AB8B60486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
