@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC_Container", "IoC_Contai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingAutoMapper", "AutoMapper\UsingAutoMapper.csproj", "{F7E44258-ADC8-4EC3-BC08-E95514D330BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingGenerics", "UsingGenerics\UsingGenerics.csproj", "{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F7E44258-ADC8-4EC3-BC08-E95514D330BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7E44258-ADC8-4EC3-BC08-E95514D330BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7E44258-ADC8-4EC3-BC08-E95514D330BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0A7377-80F5-4FD9-9293-049F3AFB12A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

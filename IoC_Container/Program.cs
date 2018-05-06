@@ -21,7 +21,7 @@ namespace IoC_Container
             using (var scope = Container.BeginLifetimeScope())
             {
                 var brand = scope.ResolveNamed<IBrand>("Brand");
-                var CarBrand = scope.ResolveNamed<IBrand>("CarBrand");
+                var CarBrand = scope.Resolve<IBrand>();
                 //var NewCarBrand = scope.Resolve<ICarBrand, >
 
                 Console.WriteLine(CarBrand.GetBrandNameById(id));

@@ -22,9 +22,6 @@ namespace UsingAutoMapper
 
             var employee2 = AutoMapper.Mapper.Map<List<EmployeeDomainModel>, List<EmployeeViewModel>>(employeeDomainModel);
 
-            foreach (AutoMapper.IObjectMapper obj in AutoMapper.Mapper.Instance.ConfigurationProvider.GetMappers())
-                Console.WriteLine(obj.ToString());
-
             Console.WriteLine();
             Console.WriteLine("-------------------");
             employee.ForEach(e => Console.WriteLine("ID: " + e.EmployeeId + " - Name: " + e.Name));
