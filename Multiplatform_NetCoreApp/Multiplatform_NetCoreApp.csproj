@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+
+    <!--https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
+    Abaixo foi o que foi alterado-->
     <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
     <RuntimeIdentifier>win10-x64;ubuntu.16.10-x64;android.21</RuntimeIdentifier>
   </PropertyGroup>

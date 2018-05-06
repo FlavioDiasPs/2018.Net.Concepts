@@ -6,7 +6,7 @@ namespace Multiplatform_NetCoreApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Alteração no csproj");
         }
     }
 }
