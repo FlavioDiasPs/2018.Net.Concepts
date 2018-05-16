@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingMiddleware", "Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingExtensionMethods", "UsingExtensionMethods\UsingExtensionMethods.csproj", "{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalLoginProviders", "ExternalLoginProviders\ExternalLoginProviders.csproj", "{8456B680-852F-4621-9531-415E6C671934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLogin", "FacebookLogin\FacebookLogin.csproj", "{70F67A06-2701-4DE0-8C13-62ED7D0084BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8456B680-852F-4621-9531-415E6C671934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8456B680-852F-4621-9531-415E6C671934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8456B680-852F-4621-9531-415E6C671934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8456B680-852F-4621-9531-415E6C671934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F67A06-2701-4DE0-8C13-62ED7D0084BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F67A06-2701-4DE0-8C13-62ED7D0084BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F67A06-2701-4DE0-8C13-62ED7D0084BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F67A06-2701-4DE0-8C13-62ED7D0084BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

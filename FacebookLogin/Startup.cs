@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 
-namespace CreatingMiddleware
+namespace FacebookLogin
 {
     public class Startup
     {
@@ -25,14 +24,14 @@ namespace CreatingMiddleware
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                         .AddCookie(o => o.LoginPath = new PathString("/login"))
                         .AddFacebook(o =>
                         {
-                            o.AppId = Configuration["facebook:appid"];
-                            o.AppSecret = Configuration["facebook:appsecret"];
-                        });
+                            o.SignInScheme = "ApplicationCookieMiddleware";
+                            o.AppId = Configuration["199502140563159"];
+                            o.AppSecret = Configuration["7106748f245abcea3d0e19dc02132dbc"];
+                        });    
 
             services.AddMvc();
         }
@@ -50,27 +49,7 @@ namespace CreatingMiddleware
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            //app.Use(async (HttpContext context, Func<Task> next) =>
-            //{
-            //    //do work before the invoking the rest of the pipeline       
-
-            //    await next.Invoke(); //let the rest of the pipeline run
-
-            //    //do work after the rest of the pipeline has run     
-            //});
-
-            app.UseMiddleware<MyFileLoggerMiddleware>(Options.Create(new MyFileLoggerOptions
-            {
-                fileUrl = System.IO.Path.Combine(env.ContentRootPath, "logFile.txt")
-            }));
-
-            app.UseMyFileLogger(new MyFileLoggerOptions
-            {
-                fileUrl = System.IO.Path.Combine(env.ContentRootPath, "log.txt")
-            });
-
-
-            app.UseStaticFiles();
+            app.UseStaticFiles();           
 
             app.UseMvc(routes =>
             {
