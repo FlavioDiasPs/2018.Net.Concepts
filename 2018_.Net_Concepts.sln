@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multiplatform_NetCoreApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingCookie", "UsingCookie\UsingCookie.csproj", "{17464100-F1EA-4C5D-BEEB-20DC9595A6D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingMemoryCache", "UsingMemoryCache\UsingMemoryCache.csproj", "{7660C549-24E5-404D-84C1-648904DC33D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingMemoryCache", "UsingMemoryCache\UsingMemoryCache.csproj", "{7660C549-24E5-404D-84C1-648904DC33D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingJWTAuthorization", "UsingJWTAuthorization\UsingJWTAuthorization.csproj", "{2B8E9BB5-33E0-4AF7-AD45-CF4890BE364B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingMiddleware", "CreatingMiddleware\CreatingMiddleware.csproj", "{31817F40-4387-42CA-A011-7EB5A344C554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingExtensionMethods", "UsingExtensionMethods\UsingExtensionMethods.csproj", "{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{7660C549-24E5-404D-84C1-648904DC33D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7660C549-24E5-404D-84C1-648904DC33D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7660C549-24E5-404D-84C1-648904DC33D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8E9BB5-33E0-4AF7-AD45-CF4890BE364B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8E9BB5-33E0-4AF7-AD45-CF4890BE364B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8E9BB5-33E0-4AF7-AD45-CF4890BE364B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8E9BB5-33E0-4AF7-AD45-CF4890BE364B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31817F40-4387-42CA-A011-7EB5A344C554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31817F40-4387-42CA-A011-7EB5A344C554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31817F40-4387-42CA-A011-7EB5A344C554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31817F40-4387-42CA-A011-7EB5A344C554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817BD3ED-D816-43E8-9A7A-8A25B1ECE7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
