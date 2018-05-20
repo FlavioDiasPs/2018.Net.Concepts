@@ -24,13 +24,21 @@ namespace FacebookLogin
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                        .AddCookie(o => o.LoginPath = new PathString("/login"))
+            //services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores();
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //            .AddCookie(o => o.LoginPath = new PathString("/login"))
+            //            .AddFacebook(o =>
+            //            {
+            //                o.AppId = Configuration["facebook:appid"];
+            //                o.AppSecret = Configuration["facebook:appsecret"];
+            //            });
+
+
+            services.AddAuthentication()                        
                         .AddFacebook(o =>
-                        {
-                            o.SignInScheme = "ApplicationCookieMiddleware";
-                            o.AppId = Configuration["199502140563159"];
-                            o.AppSecret = Configuration["7106748f245abcea3d0e19dc02132dbc"];
+                        {                         
+                            o.AppId = "1049863805164825";
+                            o.AppSecret = "1cef1bb4d09e4bc9776d82aff991b95b";
                         });    
 
             services.AddMvc();

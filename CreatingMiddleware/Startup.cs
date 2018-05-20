@@ -24,16 +24,7 @@ namespace CreatingMiddleware
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores();
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                        .AddCookie(o => o.LoginPath = new PathString("/login"))
-                        .AddFacebook(o =>
-                        {
-                            o.AppId = Configuration["facebook:appid"];
-                            o.AppSecret = Configuration["facebook:appsecret"];
-                        });
-
+        {            
             services.AddMvc();
         }
 
